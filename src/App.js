@@ -30,21 +30,6 @@ function App() {
     <div className="App">
       <Navbar/>
       <Carousel/>
-      <header className="App-header bg-primary">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 style={styles}>Nombre: {name}</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
 
       { cards.map(({titulo,descripcion,img,btnClassName},index) => (
       <Card

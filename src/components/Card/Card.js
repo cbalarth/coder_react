@@ -2,7 +2,8 @@ import React from 'react'
 import './Card.css'
 
 const Card = (props) => {
-    const {titulo, descripcion, img, btnClassName} = props
+    const {titulo, descripcion, img, btnClassName} = props;
+    
     return (
         <div className="card">
             <img src={img} className="card-img-top" alt="..."/>
