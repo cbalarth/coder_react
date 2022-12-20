@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import './CartAdder.css'
 
 const CartAdder = () => {
     const [contador, setContador] = useState(0)
@@ -10,21 +11,18 @@ const CartAdder = () => {
     }
     
     useEffect(() => {
-        console.log("Mount")
-        if(contador===3){
-            console.log("El contador llegó a 3.")
-        }
         return () => {
-            console.log("Dismount")
         }
     }, [
         contador
     ])
     
     return (
-        <div>
+        <div className="CartAdder">
             <button onClick={restar}>-1</button>
             <button onClick={sumar}>+1</button>
+            <h2>Agregar al carrito: {contador} unidades.</h2>
+            <button className="btn btn-primary">Agregar</button>
         </div>
     )
 }

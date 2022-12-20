@@ -15,7 +15,7 @@ const ItemListContainer = () => {
                     status:200,
                     data:catalogo.cards
                 })
-            },3000)
+            },1000)
         })
         operacion.then((resultado) => {     //Resultado si la promesa se resuelve.
             setCards(resultado.data)

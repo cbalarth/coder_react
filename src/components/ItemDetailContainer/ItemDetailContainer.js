@@ -2,6 +2,7 @@ import React from 'react'
 import {useParams} from 'react-router-dom'
 import catalogo from '../../catalogo.json'
 import CartAdder from '../CartAdder/CartAdder'
+import './ItemDetailContainer.css'
 
 const ItemDetailContainer = () => {
 
