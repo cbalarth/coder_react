@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-const Counter = (props) => {
-    const {nombre} = props
-
+const CartAdder = () => {
     const [contador, setContador] = useState(0)
     const sumar = () => setContador(contador+1)
     const restar = () => {
@@ -25,12 +23,10 @@ const Counter = (props) => {
     
     return (
         <div>
-            <h1>{nombre}</h1>
-            <h2>El valor del contador es: {contador}</h2>
-            <button onClick={sumar}>sumar</button>
-            <button onClick={restar}>restar</button>
+            <button onClick={restar}>-1</button>
+            <button onClick={sumar}>+1</button>
         </div>
     )
 }
 
-export default Counter
+export default CartAdder

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {useParams} from 'react-router-dom'
 import Card from '../Card/Card'
 import catalogo from '../../catalogo.json'
 import Spinner from '../Spinner/Spinner'
@@ -36,15 +37,20 @@ const ItemListContainer = () => {
         }
     }, [])
 
+    const {catID} = useParams()
+    const cardsFiltrado = catID? cards.filter((item) => item.catID === catID) : cards
+    console.log(cardsFiltrado)
+
     return (
         <div className="d-flex">
+            {/* <h1>Categoría: {catID}</h1> */}
             {loading && <Spinner/>}
-            {cards.map(({id,titulo,precio,img,btnClassName}, index) => (
+            {cardsFiltrado.map(({sku,title,price,img, btnClassName}, index) => (
                 <Card
                 key={index}
-                id={id}
-                titulo={titulo}
-                precio={precio}
+                sku={sku}
+                title={title}
+                price={price}
                 img={img}
                 btnClassName={btnClassName}
             />)

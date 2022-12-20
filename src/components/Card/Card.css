@@ -1,7 +1,7 @@
 .card{
     width: 18rem;
     margin: 10px;
-    height: 400px;
+    max-height: 400px;
 }
 
 .card-img-top{

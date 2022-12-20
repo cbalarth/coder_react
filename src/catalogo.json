@@ -1,47 +1,47 @@
 {
     "cards": [
         {
-            "id":101,
-            "titulo":"Producto 1",
-            "precio":"$10.001",
+            "sku":"101",
+            "title":"Producto 1",
+            "price":"$10.001",
             "img":"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
-            "categoria":"Poleras",
+            "catID":"c01",
             "btnClassName":"btn btn-danger fs-1"
         },
         {
-            "id":102,
-            "titulo":"Producto 2",
-            "precio":"$10.002",
+            "sku":"102",
+            "title":"Producto 2",
+            "price":"$10.002",
             "img":"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
-            "categoria":"Poleras"
+            "catID":"c01"
         },
         {
-            "id":103,
-            "titulo":"Producto 3",
-            "precio":"$10.003",
+            "sku":"103",
+            "title":"Producto 3",
+            "price":"$10.003",
             "img":"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
-            "categoria":"Poleras"
+            "catID":"c01"
         },
         {
-            "id":104,
-            "titulo":"Producto 4",
-            "precio":"$10.004",
+            "sku":"104",
+            "title":"Producto 4",
+            "price":"$10.004",
             "img":"https://cdn.pixabay.com/photo/2014/04/02/10/26/shoes-303825_960_720.png",
-            "categoria":"Zapatillas"
+            "catID":"c02"
         },
         {
-            "id":105,
-            "titulo":"Producto 5",
-            "precio":"$10.005",
+            "sku":"105",
+            "title":"Producto 5",
+            "price":"$10.005",
             "img":"https://cdn.pixabay.com/photo/2014/04/02/10/26/shoes-303825_960_720.png",
-            "categoria":"Zapatillas"
+            "catID":"c02"
         },
         {
-            "id":106,
-            "titulo":"Producto 6",
-            "precio":"$10.006",
+            "sku":"106",
+            "title":"Producto 6",
+            "price":"$10.006",
             "img":"https://cdn.pixabay.com/photo/2014/04/02/10/26/shoes-303825_960_720.png",
-            "categoria":"Zapatillas"
+            "catID":"c02"
         }
     ]
 }
