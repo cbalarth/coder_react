@@ -1,3 +1,8 @@
 .fondoNavbar{
     background-color: lightgreen !important;
 }
+
+.ordenNavbar{
+    display: flex !important;
+    justify-content: space-around !important;
+}

@@ -1,0 +1,17 @@
+{
+    "cards": [
+        {
+            "sku":123,
+            "titulo":"Producto 1",
+            "descripcion":"$10.001",
+            "img":"https://assets.stickpng.com/images/580b57fbd9996e24bc43bf75.png"
+        },
+        {
+            "sku":456,
+            "titulo":"Producto 2",
+            "descripcion":"$10.002",
+            "img":"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
+            "btnClassName":"btn btn-danger fs-1"
+        }
+    ]
+}

@@ -1,32 +1,54 @@
-import React from 'react'
-import Card from '../Card/Card';
-
-const cards = [
-    {
-        titulo:"Producto 1",
-        descripcion:"$1001",
-        img:"https://assets.stickpng.com/images/580b57fbd9996e24bc43bf75.png",
-    },
-    {
-        titulo:"Producto 2",
-        descripcion:"$1002",
-        img:"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
-        btnClassName:"btn btn-danger fs-1"
-    }
-]
+import React, {useState, useEffect} from 'react'
+import Card from '../Card/Card'
+import catalogo from '../../catalogo.json'
+import Spinner from '../Spinner/Spinner'
 
 const ItemListContainer = () => {
+    const [loading, setLoading] = useState(false)
+
+    const getCards = () => {
+        setLoading(true)
+        const operacion = new Promise ((resolve, reject) => {
+            setTimeout(() => {
+                resolve({
+                    status:200,
+                    data:catalogo.cards
+                })
+            },3000)
+        })
+        operacion.then((resultado) => {     //Resultado si la promesa se resuelve.
+            setCards(resultado.data)
+            console.log(resultado)
+        }).catch((err) => {                 //Resultado si la promesa se rechaza.
+            console.log("ERROR EN EL CATCH: "+err)
+        }).finally(() => {
+            console.log("Promesa finalizada.")
+            setLoading(false)
+        })
+    }
+    
+    const [cards, setCards] = useState([])
+    
+    useEffect(() => {
+        getCards()
+        return () => {
+            setCards([])
+        }
+    }, [])
+
     return (
-        <div>
-            { cards.map(({titulo,descripcion,img,btnClassName},index) => (
+        <div className="d-flex">
+            {loading && <Spinner/>}
+            {cards.map(({sku, titulo,descripcion,img,btnClassName}, index) => (
                 <Card
                 key={index}
+                sku={sku}
                 titulo={titulo}
                 descripcion={descripcion}
                 img={img}
                 btnClassName={btnClassName}
-                />)
-                ) }
+            />)
+            ) }
         </div>
     )
 }
