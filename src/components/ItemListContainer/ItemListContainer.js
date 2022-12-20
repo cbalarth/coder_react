@@ -39,12 +39,12 @@ const ItemListContainer = () => {
     return (
         <div className="d-flex">
             {loading && <Spinner/>}
-            {cards.map(({sku, titulo,descripcion,img,btnClassName}, index) => (
+            {cards.map(({id,titulo,precio,img,btnClassName}, index) => (
                 <Card
                 key={index}
-                sku={sku}
+                id={id}
                 titulo={titulo}
-                descripcion={descripcion}
+                precio={precio}
                 img={img}
                 btnClassName={btnClassName}
             />)

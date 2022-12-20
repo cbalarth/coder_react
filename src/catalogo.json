@@ -1,17 +1,47 @@
 {
     "cards": [
         {
-            "sku":123,
+            "id":101,
             "titulo":"Producto 1",
-            "descripcion":"$10.001",
-            "img":"https://assets.stickpng.com/images/580b57fbd9996e24bc43bf75.png"
+            "precio":"$10.001",
+            "img":"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
+            "categoria":"Poleras",
+            "btnClassName":"btn btn-danger fs-1"
         },
         {
-            "sku":456,
+            "id":102,
             "titulo":"Producto 2",
-            "descripcion":"$10.002",
+            "precio":"$10.002",
             "img":"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
-            "btnClassName":"btn btn-danger fs-1"
+            "categoria":"Poleras"
+        },
+        {
+            "id":103,
+            "titulo":"Producto 3",
+            "precio":"$10.003",
+            "img":"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
+            "categoria":"Poleras"
+        },
+        {
+            "id":104,
+            "titulo":"Producto 4",
+            "precio":"$10.004",
+            "img":"https://cdn.pixabay.com/photo/2014/04/02/10/26/shoes-303825_960_720.png",
+            "categoria":"Zapatillas"
+        },
+        {
+            "id":105,
+            "titulo":"Producto 5",
+            "precio":"$10.005",
+            "img":"https://cdn.pixabay.com/photo/2014/04/02/10/26/shoes-303825_960_720.png",
+            "categoria":"Zapatillas"
+        },
+        {
+            "id":106,
+            "titulo":"Producto 6",
+            "precio":"$10.006",
+            "img":"https://cdn.pixabay.com/photo/2014/04/02/10/26/shoes-303825_960_720.png",
+            "categoria":"Zapatillas"
         }
     ]
 }

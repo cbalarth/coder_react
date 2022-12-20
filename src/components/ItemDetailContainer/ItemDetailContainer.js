@@ -3,10 +3,10 @@ import {useParams} from 'react-router-dom'
 
 const ItemDetailContainer = () => {
 
-    const {sku} = useParams()
+    const {id} = useParams()
 
     return (
-        <h1>SKU: {sku}</h1>
+        <h1>ID: {id}</h1>
     )
 }
 
