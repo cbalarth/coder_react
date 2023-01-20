@@ -1,45 +1,51 @@
 {
     "cards": [
         {
-            "sku":"101",
+            "sku":"sku101",
+            "stock":6,
             "title":"Producto 1",
-            "price":"$10.001",
+            "price":10001,
             "img":"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
             "catID":"c01",
             "btnClassName":"btn btn-danger fs-1"
         },
         {
-            "sku":"102",
+            "sku":"sku102",
+            "stock":5,
             "title":"Producto 2",
-            "price":"$10.002",
+            "price":10002,
             "img":"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
             "catID":"c01"
         },
         {
-            "sku":"103",
+            "sku":"sku103",
+            "stock":4,
             "title":"Producto 3",
-            "price":"$10.003",
+            "price":10003,
             "img":"https://images.vexels.com/media/users/3/153096/isolated/preview/9f420eda3be1ce9b846edc9cba4bc84a-icono-de-trazo-de-camiseta-de-cuello-redondo.png",
             "catID":"c01"
         },
         {
-            "sku":"104",
+            "sku":"sku104",
+            "stock":3,
             "title":"Producto 4",
-            "price":"$10.004",
+            "price":10004,
             "img":"https://cdn.pixabay.com/photo/2014/04/02/10/26/shoes-303825_960_720.png",
             "catID":"c02"
         },
         {
-            "sku":"105",
+            "sku":"sku105",
+            "stock":2,
             "title":"Producto 5",
-            "price":"$10.005",
+            "price":10005,
             "img":"https://cdn.pixabay.com/photo/2014/04/02/10/26/shoes-303825_960_720.png",
             "catID":"c02"
         },
         {
-            "sku":"106",
+            "sku":"sku106",
+            "stock":1,
             "title":"Producto 6",
-            "price":"$10.006",
+            "price":10006,
             "img":"https://cdn.pixabay.com/photo/2014/04/02/10/26/shoes-303825_960_720.png",
             "catID":"c02"
         }

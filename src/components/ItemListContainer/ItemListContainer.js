@@ -3,8 +3,16 @@ import {useParams} from 'react-router-dom'
 import Card from '../Card/Card'
 import catalogo from '../../catalogo.json'
 import Spinner from '../Spinner/Spinner'
+import useFirebase from '../../hook/useFirebase'
 
 const ItemListContainer = () => {
+
+    const {productos} = useFirebase()
+    useEffect(() => {
+    return () => {
+    }
+    }, [productos])
+    
     const [loading, setLoading] = useState(false)
 
     const getCards = () => {
