@@ -1,7 +1,7 @@
 import React from 'react'
-import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import {NavLink} from 'react-router-dom'
+import './Navbar.css'
 
 const navbar = (props) => {
 

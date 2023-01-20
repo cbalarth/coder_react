@@ -2,9 +2,9 @@ import React, {useContext, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import catalogo from '../../catalogo.json'
 import CartAdder from '../CartAdder/CartAdder'
-import './ItemDetailContainer.css'
 import {CarritoContext} from '../../context/CarritoContext'
 import useFirebase from '../../hook/useFirebase'
+import './ItemDetailContainer.css'
 
 const ItemDetailContainer = () => {
 
