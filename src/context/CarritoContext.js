@@ -1,11 +1,11 @@
 import React, {createContext, useState} from 'react'
-import catalogo from '../catalogo.json'
+import useFirebase from '../hook/useFirebase'
 
 export const CarritoContext = createContext("");
 
 const CarritoContextProvider = ({children}) => {
 
-    const productos = catalogo.cards
+    const {productos} = useFirebase()
 
     const [carrito, setCarrito] = useState([]);
 

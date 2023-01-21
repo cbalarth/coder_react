@@ -26,7 +26,7 @@ const CartAdder = (props) => {
         contador
     ])
 
-    const producto = {
+    const agregaProducto = {
         ...item,
         cantidad:contador,
         priceTotal:price*contador
@@ -37,7 +37,7 @@ const CartAdder = (props) => {
             <button onClick={restar}>-1</button>
             <button onClick={sumar}>+1</button>
             <h2>Agregar al carrito: {contador} unidades.</h2>
-            <button className="btn btn-primary" onClick={() => addCarrito(producto)}>Agregar</button>
+            <button className="btn btn-primary" onClick={() => addCarrito(agregaProducto)}>Agregar</button>
         </div>
     )
 }

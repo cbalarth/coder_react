@@ -1,61 +1,28 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import Card from '../Card/Card'
-import catalogo from '../../catalogo.json'
 import Spinner from '../Spinner/Spinner'
 import useFirebase from '../../hook/useFirebase'
 
-const ItemListContainer = () => {
+const ItemListContainer = ({filter}) => {
 
-    const {productos} = useFirebase()
+    const {productos, getProductos, loading} = useFirebase()
     useEffect(() => {
-    return () => {
-    }
-    }, [productos])
-    
-    const [loading, setLoading] = useState(false)
-
-    const getCards = () => {
-        setLoading(true)
-        const operacion = new Promise ((resolve, reject) => {
-            setTimeout(() => {
-                resolve({
-                    status:200,
-                    data:catalogo.cards
-                })
-            },1000)
-        })
-        operacion.then((resultado) => {     //Resultado si la promesa se resuelve.
-            setCards(resultado.data)
-            console.log(resultado)
-        }).catch((err) => {                 //Resultado si la promesa se rechaza.
-            console.log("ERROR EN EL CATCH: "+err)
-        }).finally(() => {
-            console.log("Promesa finalizada.")
-            setLoading(false)
-        })
-    }
-    
-    const [cards, setCards] = useState([])
-    
-    useEffect(() => {
-        getCards()
-        return () => {
-            setCards([])
-        }
+        getProductos()
+        console.log(productos)
+        // eslint-disable-next-line
     }, [])
 
     const {catID} = useParams()
-    const cardsFiltrado = catID? cards.filter((item) => item.catID === catID) : cards
-    console.log(cardsFiltrado)
+    const productosFiltrados = catID? productos.filter((item) => item.catID === catID) : productos
 
     return (
         <div className="d-flex">
-            {/* <h1>Categoría: {catID}</h1> */}
             {loading && <Spinner/>}
-            {cardsFiltrado.map(({sku,title,price,img, btnClassName}, index) => (
+            {productosFiltrados.map(({id, sku,title,price,img, btnClassName}, index) => (
                 <Card
                 key={index}
+                id={id}
                 sku={sku}
                 title={title}
                 price={price}
