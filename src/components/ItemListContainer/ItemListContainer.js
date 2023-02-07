@@ -17,7 +17,7 @@ const ItemListContainer = ({filter}) => {
     const productosFiltrados = catID? productos.filter((item) => item.catID === catID) : productos
 
     return (
-        <div className="d-flex">
+        <div className="row row-centered pos">
             {loading && <Spinner/>}
             {productosFiltrados.map(({id, sku,title,price,img, btnClassName}, index) => (
                 <Card

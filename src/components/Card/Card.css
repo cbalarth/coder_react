@@ -2,8 +2,13 @@
     width: 18rem;
     margin: 10px;
     max-height: 400px;
+    background-color: #0F9D58;
 }
 
 .card-img-top{
     height: 210px;
+}
+
+.btn-primary{
+    background-color: #F4B400;
 }
